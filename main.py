@@ -23,7 +23,7 @@ def str():
     b = "hello world hah ah hha hha hha hah ha a a"
     c = b.split()
     print(c)
-
+# 元组
 def tup():
     tuple1 = (1,4,3,5,2)
     tuple1 = tuple1 + tuple1
