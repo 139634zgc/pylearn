@@ -1,5 +1,5 @@
 from fbis import fb ,sort, total,show_message
-
+import cclass
 
 # 队列
 def seq():
@@ -81,9 +81,16 @@ if __name__ == '__main__':
     # whi()
     # forr()
     # sort()
-    q, p = total(x=3, z=4, y=5)
-    '''调用时可指定参数'''
-    x, y = total(1, 2, 3)
-    print(x, y)
-    print(q, p)
-    show_message("good", "1", "2", "3")
+    # q, p = total(x=3, z=4, y=5)
+    # '''调用时可指定参数'''
+    # x, y = total(1, 2, 3)
+    # print(x, y)
+    # print(q, p)
+    # show_message("good", "1", "2", "3")
+    # print(cclass.Myclass.message)
+    init = cclass.Myclass()
+    init.show()
+    ins1 = cclass.Myclass()
+    ins1.show()
+    ins2 = cclass.Myclass("David", "blue")
+    ins2.show()
