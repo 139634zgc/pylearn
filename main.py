@@ -1,6 +1,7 @@
-from fbis import fb
+from fbis import fb ,sort
 
 
+# 队列
 def seq():
     a = [1,2,3,4,5,6,3,7,8,9,990,12,3,232,42]
     b = len(a)
@@ -14,6 +15,7 @@ def seq():
     print(list(e))
 
 
+# 字符串
 def str():
     a = "qwertyuioplkjhgfdsazxcvbnm"
     a1 = a.center(10)
@@ -23,19 +25,26 @@ def str():
     b = "hello world hah ah hha hha hha hah ha a a"
     c = b.split()
     print(c)
+
+
 # 元组
 def tup():
-    tuple1 = (1,4,3,5,2)
+    tuple1 = (1, 4, 3, 5, 2)
     tuple1 = tuple1 + tuple1
     print(tuple1)
     a =tuple1.count(5)
     print(a)
     print(4 in tuple1)
 
+
+# 集合
 def set1():
     mylist = ['1','a']
     sam = set(mylist)
     print(sam)
+
+
+# 字典
 def dic():
     dict1 = {'language':'english', 'title':'py book', 'pages':'900'}
     print(dict1)
@@ -43,15 +52,32 @@ def dic():
     print(dict1)
     print(dict1.keys())
 
+
+# while循环
 def whi():
-    mylist = ["evf","qqq","rrr","yyyy"]
-    while len(mylist)>0:
-        print("pop:" , mylist.pop())
+    mylist = ["evf", "qqq", "rrr", "yyyy"]
+    while len(mylist) > 0:
+        print("pop:", mylist.pop())
+    a = 2
+    if a == 2:
+        print("yes")
+    else:
+        print("not")
+# for循环
+
+
+def forr():
+    mylist = ["evf", "qqq", "rrr", "yyyy"]
+    for language in mylist:
+        print("1234", language)
+         
 
 if __name__ == '__main__':
 
     # str()
     # tup()
-    fb()
+    # fb()
     # dic()
-    whi()
+    # whi()
+    # forr()
+    sort()
