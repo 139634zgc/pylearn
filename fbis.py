@@ -1,6 +1,7 @@
 import time
 
 
+        
 def fbis(num):
     result = [0, 1]
     for i in range(num-2):
@@ -32,3 +33,19 @@ def sort():
     print(reslist)
 
 
+# 返回参数，可返回多个
+# 可带默认值
+# 函数名当作参数
+
+def sum(x, y):
+    return x + y
+
+
+def total(x, y, z):
+    return sum(x, y) + z, sum(x, y)
+
+
+# 变长参数 *
+def show_message(message, *name):
+    for name in name:
+        print(message, ",", name)
