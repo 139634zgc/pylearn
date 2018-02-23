@@ -36,6 +36,7 @@ def sort():
 # 返回参数，可返回多个
 # 可带默认值
 # 函数名当作参数
+# lambda 匿名函数
 
 def sum(x, y):
     return x + y
